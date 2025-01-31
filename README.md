@@ -1,34 +1,26 @@
-E-Commerce Project
+**E-Commerce Project**
 
-Overview
+**Overview**
 
 This is a Spring Boot-based e-commerce project that provides a backend API for managing products. The project includes features such as product CRUD operations, image handling, and search functionality.
 
-Technologies Used
+**Technologies Used**
 
 Java
-
 Spring Boot
-
 Spring Data JPA
-
 H2 Database
-
 Lombok
-
 REST API
 
-Setup Instructions
-
+**Setup Instructions**
 Prerequisites
-
 Java 17 or later
-
 Maven
 
-Any IDE (IntelliJ IDEA, Eclipse, VS Code)
+**Any IDE (IntelliJ IDEA, Eclipse, VS Code)
 
-Clone the Repository
+Clone the Repository**
 
 git clone <repository-url>
 cd ecom-project
@@ -37,7 +29,7 @@ Build and Run the Project
 
 mvn spring-boot:run
 
-Application Properties
+**Application Properties**
 
 The application uses an in-memory H2 database. Configuration is as follows:
 
@@ -48,9 +40,9 @@ spring.jpa.show-sql=true
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.defer-datasource-initialization=true
 
-API Endpoints
+**API Endpoints
 
-Product Management
+Product Management**
 
 GET /api/products - Retrieve all products
 
@@ -66,7 +58,7 @@ GET /api/product/{productId}/image - Retrieve product image
 
 GET /api/products/search?keyword= - Search for products
 
-Project Structure
+**Project Structure**
 
 com.example.ecom_project
 │── controller       # Handles API requests
@@ -75,20 +67,15 @@ com.example.ecom_project
 │── service          # Business logic and services
 │── EcomProjectApplication.java  # Main application entry point
 
-Dependencies
+**Dependencies**
 
 Spring Boot Starter Web
-
 Spring Boot Starter Data JPA
-
 H2 Database
-
 Lombok
 
-Future Enhancements
+**Future Enhancements**
 
 Implement user authentication and authorization
-
 Add support for persistent databases like MySQL or PostgreSQL
-
 Improve search functionality with filters
